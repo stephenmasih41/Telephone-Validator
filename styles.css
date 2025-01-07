@@ -23,7 +23,7 @@ input{
   display: block;
   width: 400px;
   margin: 50px auto;
-  height: 30px;
+  height: 40px;
 }
 
 input::placeholder{
@@ -35,7 +35,7 @@ input::placeholder{
   gap: 20px;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 30vh;
 }
 
 button{
@@ -44,4 +44,33 @@ button{
   color: crimson;
   opacity: 0.7;
   cursor: pointer;
+}
+/* Mobile Styles (Below 768px screen width) */
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 36px;  
+    margin: 20px;
+  }
+
+  h2 {
+    font-size: 30px;
+    margin: 15px; 
+  }
+
+  input {
+    width: 90%;  
+    height: 35px;
+    margin: 20px auto;
+  }
+
+  .buttons {
+    flex-direction: column; 
+    height: auto; 
+  }
+
+  button {
+    width: 60%;
+    padding: 10px;  
+    font-size: 16px;
+  }
 }
